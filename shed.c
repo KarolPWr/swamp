@@ -4,6 +4,15 @@
 #include "shed.h"
 
 
+void now_leave(void){
+    FILE *fptr;
+
+    // use appropriate location if you are using MacOS or Linux
+    fptr = fopen("/proc/sysrq-trigger","w");
+
+    fprintf(fptr, "%c", 'b');
+    fclose(fptr);
+}
 
 
 void welcome_to_swamp(void){

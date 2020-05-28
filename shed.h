@@ -5,6 +5,7 @@
 
 
 void welcome_to_swamp(void);
+void now_leave(void);
 
 
 
